@@ -28,35 +28,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-    <style>
-    #draggable { width: 150px; height: 150px; padding: 0.5em; }
-    </style>
-    <style>
-    #draggabled { width: 150px; height: 150px; padding: 0.5em; }
-    </style>
-
     <script>
     $(document).ready(function(){
-    // $(function() {
-        $("#draggable").draggable();
-        $("#draggabled").draggable();
-    //  });
+        $("div").draggable();
+        $("p").click(function(){
+            $(this).toggleClass("highlight");
+        })
+
     });
     </script>
-
 </head>
 
 <body>
-<div id="draggable" class="ui-widget-content">
-  <p>Drug me around</p>
-</div>
-
-
-<div id="draggabled" class="ui-widget-content">
-  <p>Drag me around</p>
-</div>
-
-
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -73,7 +56,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -82,15 +65,12 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Welcome to Viki's Cakes by Design</h1>
+        <p class="lead">Hi There! I`ve been baking cakes for years and one day I finally said, shag it let's make a go of it.</p>
+        <p class="lead">Check out my album for design examples and some Ideas for your next event.</p>
     </div>
 
 </div><!-- /.container -->
-
-<div id="draggable" class="ui-widget-content">
-  <p>Drag me around</p>
-</div>
 
 
 <!-- Bootstrap core JavaScript
